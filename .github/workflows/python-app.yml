@@ -17,17 +17,17 @@ jobs:
         uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Set up Phyton
+      - name: Set up Python
         uses: actions/checkout@v4
         with:
-          phyton-version: '3.x'
+          python-version: '3.x'
 
       # Runs a set of commands using the runners shell
       - name: Instal dependencies
         run: |
-          phyton -m pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run Test
         run: |
-          phyton -m unittest discover -s tests
+          python -m unittest discover -s tests
