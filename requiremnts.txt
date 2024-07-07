@@ -1,0 +1,4 @@
+# requirements.txt
+
+# Specify the minimum version of Python
+python>=3.6
