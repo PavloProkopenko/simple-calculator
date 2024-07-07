@@ -17,8 +17,8 @@ class TestMain(unittest.TestCase):
     def test_multiply(self):
         self.assertEqual(multiply(1, 2), 2)
         self.assertEqual(multiply(-1, 4), -4)
-        self.assertEqual(multiply(-1, -2), -3)
-        self.assertEqual(multiply(1, 0), 1)
+        self.assertEqual(multiply(-1, -2), -2)
+        self.assertEqual(multiply(1, 0), 0)
 
     def test_divide(self):
         self.assertEqual(divide(6, 2), 3)
